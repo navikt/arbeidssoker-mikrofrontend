@@ -15,10 +15,9 @@ export const getEnvironment = () => {
 
 type EnvUrl = { development: string; production: string; local: string };
 
-const API_URL: EnvUrl = {
-  local: "http://localhost:3000/api/endpoint",
-  development: "https://www.dev.nav.no/api/endpoint",
-  production: "https://www.nav.no/api/endpoint",
+const AIA_UNDERSIDE_URL: EnvUrl = {
+  local: "https://www.intern.dev.nav.no/minside/arbeidssoker",
+  development: "https://www.intern.dev.nav.no/minside/arbeidssoker",
+  production: "https://www.nav.no/minside/arbeidssoker",
 };
-
-export const apiUrl = API_URL[getEnvironment()];
+export const aiaUndersideUrl = AIA_UNDERSIDE_URL[getEnvironment()];
