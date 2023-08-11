@@ -1,29 +1,29 @@
 apiVersion: "nais.io/v1alpha1"
 kind: "Application"
 metadata:
-  name: tms-mikrofrontend-template
+  name: arbeidssoker-mikrofrontend
   namespace: min-side
   labels:
     team: min-side
 spec:
   envFrom:
-    - secret: tms-mikrofrontend-template-secrets
+    - secret: arbeidssoker-mikrofrontend-secrets
   image: {{ image }}
   port: 8080
   liveness:
-    path: /tms-mikrofrontend-template/internal/isAlive
+    path: /arbeidssoker-mikrofrontend/internal/isAlive
     initialDelay: 10
   readiness:
-    path: /tms-mikrofrontend-template/internal/isReady
+    path: /arbeidssoker-mikrofrontend/internal/isReady
     initialDelay: 10
   prometheus:
     enabled: true
-    path: /tms-mikrofrontend-template/internal/metrics
+    path: /arbeidssoker-mikrofrontend/internal/metrics
   replicas:
     min: 2
     max: 4
   ingresses:
-    - "https://www.nav.no/tms-mikrofrontend-template"
+    - "https://www.nav.no/arbeidssoker-mikrofrontend"
   resources:
     limits:
       cpu: "3"

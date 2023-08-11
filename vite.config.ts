@@ -28,7 +28,7 @@ export default ({ command }) => ({
       input: resolve(__dirname, "src/Mikrofrontend.tsx"),
       preserveEntrySignatures: "exports-only",
       output: {
-        entryFileNames: "tms-mikrofrontend-template.[hash].js",
+        entryFileNames: "arbeidssoker-mikrofrontend.[hash].js",
         format: "esm",
       },
     },
