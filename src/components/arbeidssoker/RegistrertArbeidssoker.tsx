@@ -13,7 +13,7 @@ const RegistrertArbeidssoker = () => {
 
         <div className={styles.chevronContainer}>
           <CheckmarkCircleFillIcon className={styles.checkmark} aria-hidden fontSize="24px" />
-          <ChevronRightIcon aria-hidden fontSize="24px" />
+          <ChevronRightIcon className={styles.chevron} aria-hidden fontSize="24px" />
         </div>
       </div>
       <BodyLong className={styles.text}>
