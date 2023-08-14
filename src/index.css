@@ -4,7 +4,7 @@ body {
 }
 
 body {
-  background-color: var(--navds-semantic-color-canvas-background);
+  background-color: var(--a-bg-subtle);
   font-family: sans-serif;
 }
 
