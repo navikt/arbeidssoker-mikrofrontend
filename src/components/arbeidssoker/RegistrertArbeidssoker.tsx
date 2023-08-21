@@ -2,10 +2,11 @@ import { CheckmarkCircleFillIcon, ChevronRightIcon } from "@navikt/aksel-icons";
 import { BodyLong, Heading } from "@navikt/ds-react";
 import { aiaUndersideUrl } from "../../api/urls";
 import styles from "./RegistrertArbeidssoker.module.css";
+import { logNavigereEvent } from "../../utils/amplitude";
 
 const RegistrertArbeidssoker = () => {
   return (
-    <a className={styles.container} href={aiaUndersideUrl}>
+    <a className={styles.container} href={aiaUndersideUrl} onClick={() => logNavigereEvent()}>
       <div className={styles.headerContainer}>
         <Heading size="small" level="2">
           Du er registrert som arbeidssøker
