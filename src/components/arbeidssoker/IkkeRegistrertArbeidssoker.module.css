@@ -35,12 +35,20 @@
   border-bottom: 1px solid lightgray;
 }
 
+.titleContainer {
+  display: flex;
+}
+
 .chevronContainer {
   display: flex;
 }
 
+.checkmarkContainer {
+  padding-right: 0.5rem;
+}
+
 .checkmark {
-  color: #007c2e;
+  color: #c77300;
 }
 
 .text {
