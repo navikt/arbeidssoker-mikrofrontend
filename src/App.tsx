@@ -29,8 +29,6 @@ function App() {
     return null;
   }
 
-  console.log(arbeidssokerperioder.antallDagerSidenSisteArbeidssokerperiode < 28);
-
   return (
     <>
       {(arbeidssokerperioder.antallDagerSidenSisteArbeidssokerperiode as number) < 28 &&
