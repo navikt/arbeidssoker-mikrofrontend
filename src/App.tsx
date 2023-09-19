@@ -13,7 +13,6 @@ function App() {
     oppfolgingUrl,
     fetcher
   );
-  useSWRImmutable(profilUrl, fetcher);
 
   if (isLoadingArbeidssokerPerioder) {
     return null;
