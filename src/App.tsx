@@ -1,7 +1,7 @@
 import IkkeRegistrertArbeidssoker from "./components/arbeidssoker/IkkeRegistrertArbeidssoker";
 import useSWRImmutable from "swr/immutable";
 import { fetcher } from "./api/api";
-import { arbeidssokerUrl, oppfolgingUrl, profilUrl } from "./urls";
+import { arbeidssokerUrl, oppfolgingUrl } from "./urls";
 import beregnArbeidssokerperioder from "./utils";
 
 function App() {
