@@ -3,12 +3,14 @@ import useSWRImmutable from "swr/immutable";
 import { fetcher } from "./api/api";
 import { arbeidssokerUrl, oppfolgingUrl } from "./urls";
 import beregnArbeidssokerperioder from "./utils";
+import RegistrertArbeidssoker from "./components/arbeidssoker/RegistrertArbeidssoker";
 
 function App() {
   const { data: arbeidssokerperioderData, isLoading: isLoadingArbeidssokerPerioder } = useSWRImmutable(
     arbeidssokerUrl,
     fetcher
   );
+
   const { data: underOppfolgingData, isLoading: isLoadingUnderOppfolgingData } = useSWRImmutable(
     oppfolgingUrl,
     fetcher
@@ -26,7 +28,7 @@ function App() {
   const harAktivArbeidssokerperiode = arbeidssokerperioder.harAktivArbeidssokerperiode === "Ja";
 
   if (harAktivArbeidssokerperiode) {
-    return null;
+    return <RegistrertArbeidssoker />;
   }
 
   return (

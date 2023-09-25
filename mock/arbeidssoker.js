@@ -1,5 +1,5 @@
 const identity = (i) => i;
-const periode = "nylig-utlopt";
+const periode = "aktiv"; // "nylig-utlopt"
 
 export default [
   {
