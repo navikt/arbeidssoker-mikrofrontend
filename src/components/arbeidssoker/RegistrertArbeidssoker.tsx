@@ -5,8 +5,6 @@ import styles from "./RegistrertArbeidssoker.module.css";
 import { logNavigereEvent } from "../../utils/amplitude";
 
 const RegistrertArbeidssoker = () => {
-  console.log("Er regisrtert arbeidssoker");
-
   return (
     <a className={styles.container} href={aiaUndersideUrl} onClick={() => logNavigereEvent()}>
       <div className={styles.headerContainer}>

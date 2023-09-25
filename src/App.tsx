@@ -24,8 +24,6 @@ function App() {
     return null;
   }
 
-  console.log("Lastet inn mikrofrontend for arbeidssøkere...");
-
   const arbeidssokerperioder = beregnArbeidssokerperioder(arbeidssokerperioderData.arbeidssokerperioder);
   const harAktivArbeidssokerperiode = arbeidssokerperioder.harAktivArbeidssokerperiode === "Ja";
 
